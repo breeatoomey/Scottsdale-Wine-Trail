@@ -21,7 +21,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                src="https://www.travelandleisure.com/thmb/hx3Hk-shKq38KTK0kjdzzMoK8Z0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/TAL-cadeucus-cellars-AZWINE1023-5d122aa43c3e4730aa59f2cda3755153.jpg" 
                 alt="Arizona vineyard landscape" 
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />

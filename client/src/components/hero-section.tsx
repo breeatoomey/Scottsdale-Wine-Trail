@@ -6,7 +6,7 @@ export default function HeroSection() {
     <section 
       className="relative h-screen parallax-hero flex items-center justify-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(139, 21, 56, 0.4), rgba(114, 47, 55, 0.4)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')`
+        backgroundImage: `linear-gradient(to bottom, rgba(55, 0, 60, 0.6), rgba(20, 0, 30, 0.8)), url('https://assets.experiencescottsdale.com/simpleview/image/upload/c_fill,h_857,q_75,w_1500/v1/crm/scottsdale/Main-Street-Galleries-10-8e0f46305056b3a_8e0f4824-5056-b3a8-49577c01588a2e6d.gif'`
       }}
       data-testid="hero-section"
     >

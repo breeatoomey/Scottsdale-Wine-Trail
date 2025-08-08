@@ -33,22 +33,10 @@ export interface Testimonial {
 
 export const wineries: Winery[] = [
   {
-    id: "arizona-stronghold",
-    name: "Arizona Stronghold Vineyards",
-    description: "Award-winning wines crafted from Arizona's high-desert terroir, featuring bold reds and crisp whites.",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
-    rating: 5,
-    specialties: ["Cabernet Sauvignon", "Sangiovese", "Sauvignon Blanc"],
-    address: "Downtown Scottsdale",
-    phone: "(480) 555-0101",
-    website: "www.azstronghold.com",
-    hours: "Daily 11am - 9pm"
-  },
-  {
     id: "aridus-wine",
     name: "Aridus Wine Company",
     description: "Boutique winery specializing in small-batch, handcrafted wines from Arizona's finest vineyards.",
-    image: "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
+    image: "https://www.americascuisine.com/mobile_App/gallery/4239/app_pic1.jpg",
     rating: 5,
     specialties: ["Pinot Noir", "Chardonnay", "Rosé"],
     address: "Downtown Scottsdale",
@@ -57,10 +45,22 @@ export const wineries: Winery[] = [
     hours: "Daily 11am - 8pm"
   },
   {
+    id: "wine-collective",
+    name: "The Wine Collective of Scottsdale",
+    description: "Representing many different Arizona wineries, offering the most comprehensive selection of local wines under one roof.",
+    image: "https://lh3.googleusercontent.com/p/AF1QipMj4es0m3n-5gvc-QPY28V_nCcijSDd9umJlwYg=s1360-w1360-h1020-rw",
+    rating: 5,
+    specialties: ["Arizona Wine Collection", "Tastings", "Wine Education"],
+    address: "Downtown Scottsdale",
+    phone: "(480) 555-0107",
+    website: "www.winecollectivescottsdale.com",
+    hours: "Daily 10am - 10pm"
+  },
+  {
     id: "carlson-creek",
     name: "Carlson Creek",
     description: "Family-owned vineyard producing exceptional wines that showcase Arizona's unique growing conditions.",
-    image: "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
+    image: "https://www.carlsoncreek.com/wp-content/uploads/2019/04/Carlson-Creek-Winery-bottles.jpg",
     rating: 5,
     specialties: ["Merlot", "Viognier", "Petite Sirah"],
     address: "Downtown Scottsdale",
@@ -69,22 +69,10 @@ export const wineries: Winery[] = [
     hours: "Mon-Sat 11am - 9pm, Sun 12pm - 8pm"
   },
   {
-    id: "ldv-winery",
-    name: "LDV Winery",
-    description: "Premier Arizona winery offering innovative wines and gourmet food pairings in an intimate setting.",
-    image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
-    rating: 5,
-    specialties: ["Syrah", "Gewürztraminer", "Tempranillo"],
-    address: "Downtown Scottsdale",
-    phone: "(480) 555-0104",
-    website: "www.ldvwinery.com",
-    hours: "Daily 11am - 10pm"
-  },
-  {
     id: "los-milics",
     name: "Los Milics Vineyards",
     description: "Artisanal wines crafted with passion, featuring unique varietals perfectly suited to Arizona's climate.",
-    image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
+    image: "https://losmilicsvineyards.com/wp-content/uploads/2024/03/los-milics-3-bottles-news-blade.jpeg",
     rating: 5,
     specialties: ["Grenache", "Mourvèdre", "Picpoul Blanc"],
     address: "Downtown Scottsdale",
@@ -93,10 +81,22 @@ export const wineries: Winery[] = [
     hours: "Tue-Sun 11am - 9pm"
   },
   {
+    id: "arizona-stronghold",
+    name: "Arizona Stronghold Vineyards",
+    description: "Award-winning wines crafted from Arizona's high-desert terroir, featuring bold reds and crisp whites.",
+    image: "https://www.wherewhenwine.com/logos/profile/e208f7c864c83187f735934cb39b126d.jpeg",
+    rating: 5,
+    specialties: ["Cabernet Sauvignon", "Sangiovese", "Sauvignon Blanc"],
+    address: "Downtown Scottsdale",
+    phone: "(480) 555-0101",
+    website: "www.azstronghold.com",
+    hours: "Daily 11am - 9pm"
+  },
+  {
     id: "salvatore-vineyards",
     name: "Salvatore Vineyards",
     description: "Traditional winemaking meets Arizona innovation, producing elegant wines with distinctive character.",
-    image: "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXED4T6S1ezWdCe5NYVkLGSTbBImTg5sO8IQ&s",
     rating: 5,
     specialties: ["Barbera", "Nebbiolo", "Vermentino"],
     address: "Downtown Scottsdale",
@@ -105,17 +105,17 @@ export const wineries: Winery[] = [
     hours: "Daily 10am - 9pm"
   },
   {
-    id: "wine-collective",
-    name: "The Wine Collective of Scottsdale",
-    description: "Representing many different Arizona wineries, offering the most comprehensive selection of local wines under one roof.",
-    image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
+    id: "ldv-winery",
+    name: "LDV Winery",
+    description: "Premier Arizona winery offering innovative wines and gourmet food pairings in an intimate setting.",
+    image: "https://ldvwinery.com/images/10-2021exp-scottsdale-388_425x239.jpg",
     rating: 5,
-    specialties: ["Arizona Wine Collection", "Tastings", "Wine Education"],
+    specialties: ["Syrah", "Gewürztraminer", "Tempranillo"],
     address: "Downtown Scottsdale",
-    phone: "(480) 555-0107",
-    website: "www.winecollectivescottsdale.com",
-    hours: "Daily 10am - 10pm"
-  }
+    phone: "(480) 555-0104",
+    website: "www.ldvwinery.com",
+    hours: "Daily 11am - 10pm"
+  },
 ];
 
 export const events: Event[] = [
@@ -125,7 +125,7 @@ export const events: Event[] = [
     date: "October 15, 2024",
     category: "Festival",
     description: "Celebrate the harvest season with special tastings, live music, and local artisans at all seven wineries.",
-    image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=250",
+    image: "https://bellwine.com/wp-content/uploads/2021/09/7-21-ever-wonder-what-the-stages-of-harvest-include-1080x675.jpg",
     location: "All Wine Trail Locations",
     price: "$25 per person"
   },
@@ -135,7 +135,7 @@ export const events: Event[] = [
     date: "November 3, 2024",
     category: "Dinner",
     description: "Multi-course dinner featuring Arizona wines paired with locally-sourced cuisine by renowned chefs.",
-    image: "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=250",
+    image: "https://media.istockphoto.com/id/1137741978/photo/lesbian-couple-or-friends-drinking-wine-at-kitchen.jpg?s=612x612&w=0&k=20&c=lVttHrdQtI2mUMIlLzeqjLBulRT-KXYYRwUE7EupMOY=",
     location: "LDV Winery",
     price: "$85 per person"
   },
@@ -145,7 +145,7 @@ export const events: Event[] = [
     date: "November 18, 2024",
     category: "Education",
     description: "Learn about Arizona's unique terroir and winemaking techniques from local vintners and sommeliers.",
-    image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=250",
+    image: "https://www.vinography.com/wp-content/uploads/2020/11/mava_winemaker_dinner_2018.jpg",
     location: "Arizona Stronghold Vineyards",
     price: "$45 per person"
   }

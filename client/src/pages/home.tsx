@@ -30,7 +30,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                src="https://www.azcentral.com/gcdn/-mm-/4970a517fad09d4ea33bb530fe060a1d464449b2/c=0-95-1915-1177/local/-/media/2016/08/24/Phoenix/Phoenix/636076564394869126-PNIBrd2-08-29-2015-Republic-1-F006-2015-08-28-IMG-View-from-Pillsbury-1-1-LRBO5SPI-L666501274-IMG-View-from-Pillsbury-1-1-LRBO5SPI.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp" 
                 alt="Arizona vineyard landscape" 
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
@@ -69,15 +69,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Featured Wineries
+              Our Tasting Rooms
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover three of our most popular wine destinations
+              Old Town Scottsdales premier wine tasting destinations 
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {wineries.slice(0, 3).map((winery) => (
+            {wineries.slice(0, 7).map((winery) => (
               <WineryCard key={winery.id} winery={winery} />
             ))}
           </div>
