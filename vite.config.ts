@@ -2,15 +2,15 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
+// ----- CHOOSE ONE -----
+// 1) Custom domain (root)  -> base: '/'
+const USING_CUSTOM_DOMAIN = false
+// 2) Project page path     -> base: '/Scottsdale-Wine-Trail/'
+// const USING_CUSTOM_DOMAIN = false
+
 export default defineConfig({
-  // We keep index.html at the repo root
   root: '.',
-
-  plugins: [
-    react(),
-    ...(process.env.NODE_ENV !== 'production' ? [] : []),
-  ],
-
+  plugins: [react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'client', 'src'),
@@ -18,10 +18,9 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, 'attached_assets'),
     },
   },
-
-  // Build the static site into /docs so GitHub Pages can serve it
   build: {
     outDir: 'docs',
     emptyOutDir: true,
   },
+  base: USING_CUSTOM_DOMAIN ? '/' : '/Scottsdale-Wine-Trail/',
 })
