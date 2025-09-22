@@ -2,14 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
-// ----- CHOOSE ONE -----
-// 1) Custom domain (root)  -> base: '/'
-const USING_CUSTOM_DOMAIN = false
-// 2) Project page path     -> base: '/Scottsdale-Wine-Trail/'
-// const USING_CUSTOM_DOMAIN = false
-
 export default defineConfig({
-  root: '.',
+  root: '.',                                // index.html is at repo root
   plugins: [react()],
   resolve: {
     alias: {
@@ -19,8 +13,8 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'docs',
+    outDir: 'docs',                          // Pages will serve /docs
     emptyOutDir: true,
   },
-  base: USING_CUSTOM_DOMAIN ? '/' : '/Scottsdale-Wine-Trail/',
+  base: '/Scottsdale-Wine-Trail/',           // <—— IMPORTANT (exact repo name)
 })
