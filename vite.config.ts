@@ -1,10 +1,11 @@
-// vite.config.ts  (repo root)
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
+const isProd = process.env.NODE_ENV === 'production'
+
 export default defineConfig({
-  root: '.',                             // index.html at repo root
+  root: '.',
   plugins: [react()],
   resolve: {
     alias: {
@@ -14,8 +15,6 @@ export default defineConfig({
     },
   },
   build: { outDir: 'docs', emptyOutDir: true },
-
-  // >>> CHOOSE ONE <<<
-  // base: '/',                        // if using custom domain
-  base: '/Scottsdale-Wine-Trail/',     // if using GitHub project URL
+  // Use repo path in prod (GitHub Pages), plain '/' in dev
+  base: isProd ? '/Scottsdale-Wine-Trail/' : '/',
 })
