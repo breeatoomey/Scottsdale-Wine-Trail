@@ -1,9 +1,10 @@
+// vite.config.ts  (repo root)
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
-  root: '.',                                // index.html is at repo root
+  root: '.',                             // index.html at repo root
   plugins: [react()],
   resolve: {
     alias: {
@@ -12,9 +13,9 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, 'attached_assets'),
     },
   },
-  build: {
-    outDir: 'docs',                          // Pages will serve /docs
-    emptyOutDir: true,
-  },
-  base: '/Scottsdale-Wine-Trail/',           // <—— IMPORTANT (exact repo name)
+  build: { outDir: 'docs', emptyOutDir: true },
+
+  // >>> CHOOSE ONE <<<
+  // base: '/',                        // if using custom domain
+  base: '/Scottsdale-Wine-Trail/',     // if using GitHub project URL
 })
