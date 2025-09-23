@@ -125,7 +125,7 @@ export const events: Event[] = [
     date: "October 15, 2024",
     category: "Festival",
     description: "Celebrate the harvest season with special tastings, live music, and local artisans at all seven wineries.",
-    image: "https://bellwine.com/wp-content/uploads/2021/09/7-21-ever-wonder-what-the-stages-of-harvest-include-1080x675.jpg",
+    image: "https://www.thespruceeats.com/thmb/3o0c9bNCt-xAsGpIFVHk37oRoCY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/senior-mans-hands-harvesting-grapes-from-vine-556415823-58339d1f5f9b58d5b1bf918a.jpg",
     location: "All Wine Trail Locations",
     price: "$25 per person"
   },

@@ -123,33 +123,44 @@ export default function Events() {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-20 wine-gradient text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-4xl font-bold mb-6">
+      <section className="relative overflow-hidden">
+        {/* Rounded container with darker burgundy gradient */}
+        <div className="max-w-6xl mx-auto relative z-10 bg-gradient-to-br from-[#6b1e31] via-[#751f36] to-[#5d1a2b] rounded-3xl shadow-xl px-4 sm:px-8 lg:px-12 py-16">
+          <h2 className="font-serif text-4xl mb-3 text-white text-center">
             Stay Updated on Events
           </h2>
-          <p className="text-xl text-white/90 mb-8">
-            Subscribe to our newsletter to be the first to know about upcoming wine events and exclusive tastings
+          <p className="text-white/90 mb-8 text-center text-lg">
+            News, exclusive offers, and trail updates—no spam.
           </p>
-          
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 max-w-2xl mx-auto">
-            <form className="flex flex-col sm:flex-row gap-4" data-testid="newsletter-form">
-              <input 
-                type="email" 
+
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-2xl ring-1 ring-black/10 max-w-2xl mx-auto">
+            <form className="flex flex-col sm:flex-row gap-3 items-stretch">
+              <label htmlFor="nl-email" className="sr-only">
+                Email
+              </label>
+
+              <input
+                id="nl-email"
+                type="email"
                 placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-gold-400"
-                data-testid="input-newsletter-email"
+                required
+                className="flex-1 rounded-lg bg-white text-gray-900 placeholder:text-gray-500 
+                          px-4 py-3 text-sm shadow-sm ring-1 ring-gray-300
+                          focus:outline-none focus:ring-2 focus:ring-[#6b1e31]"
               />
-              <Button 
+
+              <button
                 type="submit"
-                className="gold-gradient text-burgundy-800 px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-all"
-                data-testid="button-newsletter-subscribe"
+                className="shrink-0 rounded-lg px-5 py-3 text-sm font-semibold
+                          bg-[#6b1e31] text-white hover:bg-[#5d1a2b]
+                          focus:outline-none focus:ring-2 focus:ring-[#6b1e31] transition shadow-md"
               >
                 Subscribe
-              </Button>
+              </button>
             </form>
-            <p className="text-white/70 text-sm mt-4">
-              No spam, just wine events and special offers. Unsubscribe anytime.
+
+            <p className="text-gray-700 text-sm mt-4 text-center">
+              You can unsubscribe anytime.
             </p>
           </div>
         </div>
